@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EA Express - Freight Transport Services</title>
+    <meta name="description"
+        content="Reliable Transport Solutions, Anytime, Anywhere. Delivering customized logistic solutions for small and medium businesses through trusted carrier networks.">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="main-header">
+        <div class="container">
+            <div class="logo-container">
+                <a href="#" class="logo-brand">
+                    <i class="fas fa-shipping-fast logo-icon"></i>
+                    <span class="logo-text">EA <span class="highlight">EXPRESS</span></span>
+                </a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#services">Our Services</a></li>
+                    <li><a href="#uk-same-day">UK Same Day</a></li>
+                    <li><a href="#next-day">Next Day</a></li>
+                    <li><a href="#company">Our Company</a></li>
+                    <li><a href="#contact" class="btn btn-primary">Get in Touch</a></li>
+                </ul>
+                <button class="mobile-menu-toggle" aria-label="Toggle Navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-background" style="background-image: url('assets/images/hero.png');"></div>
+        <div class="hero-overlay"></div>
+        <div class="container hero-container">
+            <div class="hero-text">
+                <h1>Reliable Transport Solutions,<br>Anytime, Anywhere</h1>
+                <p class="subline">Delivering customized logistic solutions for small and medium businesses through
+                    trusted carrier networks</p>
+                <div class="hero-buttons">
+                    <a href="#services" class="btn btn-primary">Our Services</a>
+                </div>
+            </div>
+            <!-- Quick Quote Form -->
+            <div class="hero-form-wrapper">
+                <h3>Need a quote quickly?</h3>
+                <form id="quoteForm" class="quick-quote-form" method="POST">
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="company" placeholder="Enter your company name">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" rows="3" placeholder="How can we help?"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-submit">
+                        <i class="far fa-envelope"></i> Submit
+                    </button>
+                    <div id="form-status" class="form-status"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Services Section -->
+    <section class="services section-padding" id="services">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2>Our Services</h2>
+                <p>We provide reliable UK-wide document, parcel, pallet, and freight delivery services</p>
+            </div>
+            <div class="services-grid">
+                <!-- Service Item 1: UK Same Day -->
+                <div class="service-card">
+                    <div class="icon-box">
+                        <i class="fas fa-shipping-fast"></i>
+                    </div>
+                    <h3>UK Same Day</h3>
+                    <p>UK Same-Day Delivery Made Simple. When time matters, our UK same day delivery service keeps your
+                        business moving.</p>
+                    <a href="#uk-same-day" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <!-- Service Item 2: Next Day Delivery -->
+                <div class="service-card">
+                    <div class="icon-box">
+                        <i class="fas fa-calendar-day"></i>
+                    </div>
+                    <h3>Next Day Delivery UK</h3>
+                    <p>Next-Day UK Delivery You Can Depend On. Designed to keep your shipments moving without delay.</p>
+                    <a href="#next-day" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <!-- Service Item 3: UK Wide Delivery -->
+                <div class="service-card">
+                    <div class="icon-box">
+                        <i class="fas fa-map-marked-alt"></i>
+                    </div>
+                    <h3>UK Wide Delivery</h3>
+                    <p>UK Courier Solutions Built for Growing Businesses. Flexible delivery speed, service level and
+                        cost.</p>
+                    <a href="#uk-wide" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <!-- Service Item 4: Planning & Consultancy -->
+                <div class="service-card">
+                    <div class="icon-box">
+                        <i class="fas fa-clipboard-list"></i>
+                    </div>
+                    <h3>Planning & Consultancy</h3>
+                    <p>Smarter Shipping Solutions. Expert guidance for both domestic and international deliveries.</p>
+                    <a href="#planning" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- UK Same Day Section -->
+    <section class="details-section section-padding bg-light" id="uk-same-day">
+        <div class="container">
+            <div class="row">
+                <div class="col-text">
+                    <h2>UK Same Day</h2>
+                    <h3>UK Same-Day Delivery Made Simple</h3>
+                    <p>When time matters, our UK same day delivery service keeps your business moving. We arrange fast
+                        collections for urgent documents, parcels, and freight by selecting the most suitable carrier
+                        for your job, ensuring speed, reliability, and value.</p>
+                    <p>Our nationwide network allows us to deploy bikes, cars, or vans depending on your location and
+                        shipment size. Collections are arranged quickly, and deliveries are completed securely across
+                        the UK, seven days a week.</p>
+
+                    <h4>Built for Urgent UK Shipments</h4>
+                    <p>From single envelopes to bulk consignments, we manage same day collections across the UK with
+                        flexible delivery options, including time critical services. Our approach ensures your goods are
+                        picked up without delay and delivered efficiently, all while keeping costs under control.</p>
+
+                    <h4>Support You Can Rely On</h4>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check"></i> Identifying the fastest available collection option</li>
+                        <li><i class="fas fa-check"></i> Selecting the most cost-effective UK carrier</li>
+                        <li><i class="fas fa-check"></i> Coordinating delivery times to meet your deadlines</li>
+                        <li><i class="fas fa-check"></i> Managing paperwork and billing in one place</li>
+                        <li><i class="fas fa-check"></i> Providing full tracking and delivery confirmation</li>
+                    </ul>
+                    <p class="cta-text">You can book shipments instantly through our free online shipping platform,
+                        giving you complete visibility and control.</p>
+                </div>
+                <div class="col-image">
+                    <!-- Placeholder or Icon Art -->
+                    <div class="image-wrapper">
+                        <img src="assets/images/uk-sameday.png" alt="UK Same Day Delivery Van" class="section-image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Next Day Delivery Section -->
+    <section class="details-section section-padding" id="next-day">
+        <div class="container">
+            <div class="row reverse">
+                <div class="col-text">
+                    <h2>Next Day Delivery UK</h2>
+                    <h3>Next-Day UK Delivery You Can Depend On</h3>
+                    <p>Our next-business-day delivery service is designed to keep your shipments moving without delay.
+                        By selecting from a broad network of UK carriers, we secure the most suitable delivery option
+                        for your shipment — balancing speed, reliability, and cost.</p>
+                    <p>We arrange safe, door-to-door next-day deliveries across the UK, with optional timed services
+                        available where deadlines are critical. From a single document to multiple consignments, your
+                        goods are collected promptly and delivered to your customers the very next working day.</p>
+
+                    <h4>Designed to Remove Delivery Hassles</h4>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check"></i> Matching your shipment with the most efficient UK carrier</li>
+                        <li><i class="fas fa-check"></i> Managing collection schedules and cut off times</li>
+                        <li><i class="fas fa-check"></i> Securing competitive pricing from multiple providers</li>
+                        <li><i class="fas fa-check"></i> Supporting fast e-commerce dispatch with simple system
+                            connections</li>
+                        <li><i class="fas fa-check"></i> Centralizing paperwork and invoicing</li>
+                        <li><i class="fas fa-check"></i> Providing full shipment tracking and delivery confirmation</li>
+                    </ul>
+                    <p class="cta-text">Book quickly and easily through your free online shipping account, giving you
+                        full control and visibility over every delivery.</p>
+                </div>
+                <div class="col-image">
+                    <!-- Placeholder or Icon Art -->
+                    <div class="image-wrapper">
+                        <img src="assets/images/next-day.png" alt="Happy Delivery Customer" class="section-image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- UK Wide Section -->
+    <section class="details-section section-padding bg-light" id="uk-wide">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2>UK Wide Delivery</h2>
+                <p>UK Courier Solutions Built for Growing Businesses</p>
+            </div>
+            <p>We provide nationwide courier services designed specifically for small and medium sized businesses across
+                the UK. Our approach gives you the flexibility to balance delivery speed, service level and cost. All
+                from one simple platform or with support from our experienced logistics team.</p>
+            <p>Our focus is on helping SMEs deliver more while spending less. With adaptable service options and
+                competitive pricing, you can offer your customers reliable delivery without stretching your budget or
+                sacrificing quality.</p>
+
+            <div class="features-grid">
+                <div class="feature-item">
+                    <h4>Practical Support</h4>
+                    <p>Shipping doesn’t need to be complicated. We simplify the process by offering delivery solutions
+                        for single or multiple UK destinations that scale up or down as your business demands change.
+                    </p>
+                </div>
+                <div class="feature-item">
+                    <h4>End-to-End Visibility</h4>
+                    <p>End-to-end shipment visibility with full tracking, ongoing cost control through access to the
+                        best available courier rates, and consolidated billing with one clear invoice.</p>
+                </div>
+                <div class="feature-item">
+                    <h4>Simple & Flexible</h4>
+                    <p>Whatever you’re shipping, we identify the most suitable courier and service at discounted rates.
+                        Book deliveries as often or as little as you need with minimum contracts.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Planning & Consultancy Section -->
+    <section class="details-section section-padding" id="planning">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2>Planning and Consultancy</h2>
+            </div>
+            <div class="row">
+                <div class="col-text full-width">
+                    <h3>Smarter Shipping Solutions for UK and International Deliveries</h3>
+                    <p>Whether you are looking to streamline costs, improve efficiency, or create a stronger foundation
+                        for your shipping operations, we provide expert guidance for both domestic and international
+                        deliveries.</p>
+                    <p>From sending a handful of parcels each month to managing complex import and export requirements,
+                        our team can design a shipping plan tailored to your needs. With access to a worldwide network
+                        of trusted carriers, you can choose multiple providers to ensure you get the most competitive
+                        rates and reliable service without being tied to a single supplier.</p>
+
+                    <div class="two-col-list">
+                        <div>
+                            <h4>Comprehensive Shipping Support</h4>
+                            <ul class="feature-list">
+                                <li><i class="fas fa-check"></i> Planning and optimizing both UK nationwide shipments
+                                </li>
+                                <li><i class="fas fa-check"></i> Managing all documentation and compliance requirements
+                                </li>
+                                <li><i class="fas fa-check"></i> End-to-end tracking with delivery confirmation</li>
+                                <li><i class="fas fa-check"></i> Flexible dispatch options, including split deliveries
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4>Flexible, Easy-to-Use Service</h4>
+                            <ul class="feature-list">
+                                <li><i class="fas fa-check"></i> Optional insurance integration for added peace of mind
+                                </li>
+                                <li><i class="fas fa-check"></i> Consolidated invoicing for simpler accounting</li>
+                                <li><i class="fas fa-check"></i> Competitive rates from a wide range of reputable
+                                    carriers</li>
+                                <li><i class="fas fa-check"></i> Minimum commitments just consistent support</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Our Company / Why Choose Us -->
+    <section class="company-section section-padding bg-dark text-white" id="company">
+        <div class="container">
+            <div class="row">
+                <div class="col-text">
+                    <h2>Our Company</h2>
+                    <p>At <strong>EA Express Ltd.</strong>, we specialize in helping businesses manage their courier and
+                        freight needs, nationwide. Our friendly team is ready to explore how we can support your
+                        shipping requirements efficiently and cost effectively.</p>
+                    <p>Since 2023, we have been assisting small and medium-sized enterprises with sending and receiving
+                        documents, parcels, and pallets throughout the UK, all at competitive rates.</p>
+                    <p>We work in partnership with trusted national and international carriers who handle collection and
+                        delivery, while we focus on providing personalized customer service, streamlined invoicing, and
+                        professional support at every stage.</p>
+                </div>
+                <div class="col-text">
+                    <h2>Why Choose EA Express</h2>
+                    <p>Enjoy a fast, dependable, and cost effective courier service with access to multiple carriers,
+                        full tracking, and a complete record of all shipments all combined into a single, easy-to-read
+                        invoice.</p>
+                    <ul class="feature-list white-icons">
+                        <li><i class="fas fa-check-circle"></i> One account, multiple carrier choices tailored to your
+                            needs</li>
+                        <li><i class="fas fa-check-circle"></i> Direct, personalised customer support no impersonal call
+                            centres</li>
+                        <li><i class="fas fa-check-circle"></i> Convenient online portal for quotes, bookings, tracking
+                        </li>
+                        <li><i class="fas fa-check-circle"></i> Manage shipments from multiple locations with one
+                            invoice</li>
+                        <li><i class="fas fa-check-circle"></i> Flexible shipping solutions with no minimum volume
+                            requirements</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Footer -->
+    <!-- Footer -->
+    <footer id="contact" class="main-footer">
+        <div class="footer-top section-padding">
+            <div class="container">
+                <div class="footer-grid">
+                    <!-- Column 1: Company Info -->
+                    <div class="footer-col company-info">
+                        <div class="footer-logo">
+                            <i class="fas fa-shipping-fast logo-icon"></i>
+                            <span class="logo-text">EA <span class="highlight">EXPRESS</span></span>
+                        </div>
+                        <address>
+                            <strong>EA Express Transport Ltd</strong><br>
+                            123 Transport Way, Logistics Park<br>
+                            London, UK, SW1A 1AA<br><br>
+                            <strong>Registered Company:</strong> 12345678 in England & Wales<br>
+                            <strong>VAT No.</strong> 123 456 789
+                        </address>
+
+                        <div class="connect-links">
+                            <h4>Connect</h4>
+                            <div class="social-icons">
+                                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                                <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Column 2: Small Print -->
+                    <div class="footer-col">
+                        <h4>Small Print</h4>
+                        <ul class="footer-links">
+                            <li><a href="#">Terms of Service</a></li>
+                            <li><a href="#">Website Usage</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                        </ul>
+
+                        <h4 class="mt-4">Looking for Work?</h4>
+                        <ul class="footer-links">
+                            <li><a href="#">Job Vacancies</a></li>
+                        </ul>
+
+                        <p class="mt-4 text-muted">Web design by <strong>EA Tech</strong></p>
+                    </div>
+
+                    <!-- Column 3: Twitter Feed Placeholder (Optional as per ref) -->
+                    <div class="footer-col">
+                        <p class="twitter-placeholder">Tweets by @EAExpress_UK</p>
+                    </div>
+                </div>
+
+                <!-- SEO / Bottom Links Block -->
+                <div class="footer-bottom-links">
+                    <p>
+                        Business Courier London | Business Courier Essex | International Courier London | International
+                        Courier Essex | Courier Services London | Courier Services Essex | Next Day Courier London |
+                        Next Day Courier Essex | Send A Parcel London | Send A Parcel Essex | Cheap Parcel Delivery
+                        London | Cheap Parcel Delivery Essex | Pallet Delivery London | Pallet Delivery Essex | Small
+                        Business Delivery Partner London | Small Business Delivery Partner Essex
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Copyright & Back to Top -->
+        <div class="footer-copyright">
+            <div class="container copyright-container">
+                <button id="backToTop" class="back-to-top" aria-label="Back to Top">
+                    <i class="fas fa-chevron-up"></i>
+                </button>
+                <p>&copy; 2025 EA Express Ltd. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
