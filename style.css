@@ -158,35 +158,60 @@ h3 {
 }
 
 /* Logo Styles */
-.logo-brand {
+/* Logo Styling with Tagline */
+.logo-wrapper {
     display: flex;
     align-items: center;
-    gap: 12px;
+    /* Vertically center icon with the text group */
+    gap: 15px;
     text-decoration: none;
-    transition: all 0.3s ease;
 }
 
-.logo-icon {
-    font-size: 3rem;
-    /* Large icon */
-    color: var(--primary-green);
-    transition: all 0.3s ease;
+.logo-text-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    line-height: normal;
 }
 
 .logo-text {
     font-size: 2.2rem;
     font-weight: 800;
     color: var(--white);
-    /* Start white */
     letter-spacing: 1px;
     line-height: 1;
     font-style: italic;
     transition: color 0.3s ease;
+    margin: 0;
+    padding: 0;
+}
+
+.logo-tagline {
+    font-size: 0.9rem;
+    color: #ccc;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    margin-top: 2px;
+    padding-left: 2px;
+    text-transform: none;
+    /* Keep natural case or uppercase if preferred */
+    font-style: normal;
+}
+
+.main-header.scrolled .logo-tagline {
+    color: #555;
+}
+
+.logo-icon {
+    font-size: 3.5rem;
+    /* Make icon large enough to span 2 lines */
+    color: var(--primary-green);
+    transition: all 0.3s ease;
 }
 
 .logo-text .highlight {
     color: var(--primary-green);
-    /* Optional: make part of text green or keep all white/dark */
 }
 
 /* Scrolled State for Logo */
