@@ -834,4 +834,25 @@ h3 {
     .two-col-list {
         grid-template-columns: 1fr;
     }
+
+    /* Mobile Logo Spacing & Sizing to prevent overlap */
+    .logo-wrapper {
+        gap: 15px;
+        /* Reduced to reasonable gap */
+    }
+
+    .logo-text {
+        font-size: 1.5rem;
+        /* Reduced from 2.2rem */
+    }
+
+    .logo-icon {
+        font-size: 2rem;
+        /* Reduced from 3.5rem */
+    }
+
+    .logo-tagline {
+        font-size: 0.75rem;
+        /* Scaled down slightly */
+    }
 }
